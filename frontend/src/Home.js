@@ -4,10 +4,15 @@ function Home() {
   return (
     <div class="page-content">
       <br />
-      <h1>Hello</h1>
+      <h2>Hello</h2>
       <p>This is the home page.</p>
-      <p>Click the link below to play Tic Tac Toe:</p>
-    <a href="./tictactoe">Play Tic Tac Toe</a>
+      <p>
+        Below is a list of projects that I have been working on, in order to
+        demonstate my skills as a Junior Software Engineer:
+      </p>
+      <li><a href="./tictactoe">Tic Tac Toe</a></li>
+      <br />
+      <li><a href="./joke">Dad Joke Generator</a></li>
     </div>
   );
 }
