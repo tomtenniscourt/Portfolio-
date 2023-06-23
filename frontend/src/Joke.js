@@ -23,21 +23,10 @@ const Joke = ({ savedJokes, setSavedJokes }) => {
 
   return (
     <div className="joke-page">
-      <h1>Dad Joke Depot</h1>
+      <h1>Dad Joke Generator</h1>
       <p>
-        Get ready to laugh, groan, or cringe! The Dad Joke Depot is everything
-        missing in your life.
-        <br />
-        <br />
-        Simply press the <span className="button-highlight">BUTTON</span> below
+        Press the <span className="button-highlight">BUTTON</span> below
         to randomly generate a thigh-slapping cracker straight to your screen.
-        <br />
-        <br />
-        Like what you see? Save the joke to your Favourites list!
-        <br />
-        <br />
-        Are you a dad? Do you live to serve endless cringe? Upload your own
-        jokes on the next page!
         <br />
       </p>
       <button className="joke-button" onClick={generateJoke}>

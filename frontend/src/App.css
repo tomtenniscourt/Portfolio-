@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Lobster+Two&display=swap');
+
 /* NAV BAR CSS */
 nav ul {
   list-style-type: none;
@@ -33,4 +35,40 @@ nav ul li a {
   border-radius: 10%;
   object-fit: cover;
   margin: 0 auto;
+  border: 2px solid black;
+}
+/* Fonts */
+h1 {
+font-family: 'Lobster Two', cursive;
+font-size: 75px;
+color: #333333;
+}
+
+h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 50px;
+  color: #333333;
+}
+
+p {
+font-family: 'Indie Flower', cursive;
+font-size: 25px;
+color: #444444;
+}
+
+.nav-item {
+  font-family: 'Lobster Two', cursive;
+  font-size: 25px;
+}
+
+.home-links {
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Background Colour */
+body {
+  background-color: #F8F8F8;
 }
