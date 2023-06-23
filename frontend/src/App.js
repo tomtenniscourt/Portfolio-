@@ -17,14 +17,14 @@ function App() {
       <div>
         <Navbar />
         <div class="static-content">
-          <h1>Tom Court</h1>
+          <h1>Tom Court: Software Engineer</h1>
           <img
             class="profile-picture"
             src="https://i.imgur.com/JrRNitO.jpeg"
             alt="Tom's profile picture"
             style={{ width: "200px", height: "auto" }}
           />
-          <h2>Software Engineer</h2>
+          <br />
         </div>
         <Routes>
           <Route path="/" element={<Home />} />

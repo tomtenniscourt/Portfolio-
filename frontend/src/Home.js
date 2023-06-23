@@ -3,8 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div class="page-content">
-      <br />
-      <h2>Hello</h2>
+      <h1>Hello</h1>
       <p>This is the home page.</p>
       <p>
         Below is a list of projects that I have been working on, in order to
