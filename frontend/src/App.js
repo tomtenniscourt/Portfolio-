@@ -5,6 +5,7 @@ import Home from "./Home";
 import Blog from "./Blog";
 import About from "./About";
 import Contact from "./Contact";
+import Tictactoe from "./Tictactoe";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tictactoe" element={<Tictactoe />} />
         </Routes>
       </div>
     </Router>
