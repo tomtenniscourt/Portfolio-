@@ -43,20 +43,22 @@
 .status {
     margin-top: 20px;
     font-size: 24px;
+    font-family: 'Indie Flower', cursive;
 }
 
 .reset-button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    font-size: 18px;
-    background-color: #ff6060;
+    font-size: 25px;
+    background-color: #e63b3b;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    font-family: 'Lobster Two', cursive;}
 
-.reset-button:hover {
-    background-color: #e63b3b;
+    .reset-button:hover {
+    background-color: #ff6060;
+    transform: scale(1.1);
 }

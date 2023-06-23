@@ -1,3 +1,13 @@
 .weather-content {
     text-align: center;
 }
+
+.weather-label {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
+
+.weather-submit {
+font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+}

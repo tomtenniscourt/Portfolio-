@@ -3,7 +3,7 @@ import "./Tictactoe.css";
 
 const Tictactoe = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
-  const [currentPlayer, setCurrentPlayer] = useState("🚀");
+  const [currentPlayer, setCurrentPlayer] = useState("⭕️");
   const [winner, setWinner] = useState(null);
 
   const winningCombos = [
@@ -33,7 +33,7 @@ const Tictactoe = () => {
     } else if (checkTie(newBoard)) {
       setWinner("draw");
     } else {
-      setCurrentPlayer(currentPlayer === "🚀" ? "🛸" : "🚀");
+      setCurrentPlayer(currentPlayer === "⭕️" ? "❌" : "⭕️");
     }
   };
 
@@ -59,7 +59,7 @@ const Tictactoe = () => {
 
   return (
     <div className="tictactoe">
-        <h1>Tic Tac Toe</h1>
+        <h2>Tic Tac Toe</h2>
       <div className="board">
         {board.map((cell, index) => (
           <div

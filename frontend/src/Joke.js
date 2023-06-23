@@ -23,7 +23,7 @@ const Joke = ({ savedJokes, setSavedJokes }) => {
 
   return (
     <div className="joke-page">
-      <h1>Dad Joke Generator</h1>
+      <h2>Dad Joke Generator</h2>
       <p>
         Press the <span className="button-highlight">BUTTON</span> below
         to randomly generate a thigh-slapping cracker straight to your screen.

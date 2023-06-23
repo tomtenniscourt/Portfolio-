@@ -64,7 +64,7 @@ class Paint extends Component {
 
     return (
       <div className="paint-container">
-        <h1>Paint App</h1>
+        <h2>Paint App</h2>
         <br />
         <div className="controls">
           <label>

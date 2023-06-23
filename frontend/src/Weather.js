@@ -76,15 +76,14 @@ class Weather extends Component {
 
     return (
       <div className="weather-content">
-        <h1>Weather Forecast</h1>
+        <h2>Weather Forecast</h2>
         <form onSubmit={this.handleSubmit}>
-          <label>
-            Enter your zip code:
-            <input type="text" onChange={this.handleChange} />
+          <label class="weather-label">
+            Enter your zip code:  <input type="text" onChange={this.handleChange} />
           </label>
           <br />
           <br />
-          <input type="submit" value="Get my forecast!" />
+          <input type="submit" class="weather-submit" value="Get my forecast!" />
           <br />
           <br />
           <p>

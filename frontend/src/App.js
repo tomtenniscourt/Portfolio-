@@ -22,7 +22,7 @@ function App() {
           <h1>Tom Court: Software Engineer</h1>
           <img
             class="profile-picture"
-            src="https://i.imgur.com/JrRNitO.jpeg"
+            src="https://i.imgur.com/FkHGe3V.png"
             alt="Tom's profile picture"
             style={{ width: "200px", height: "auto" }}
           />
