@@ -2,8 +2,9 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
-      <h2>Home Page</h2>
+    <div class="page-content">
+        <br />
+      <h1>Hello</h1>
       <p>This is the home page.</p>
     </div>
   );

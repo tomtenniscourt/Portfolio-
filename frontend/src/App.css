@@ -1,3 +1,4 @@
+/* NAV BAR CSS */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -13,4 +14,23 @@ nav ul li a {
   text-decoration: none;
   color: #333;
   font-size: 18px;
+}
+
+/* STATIC CONTENT */
+  .static-content {
+    text-align: center;
+  }
+
+  .page-content {
+    text-align: center;
+  }
+
+/* Profile Picture */
+.profile-picture {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin: 0 auto;
 }
