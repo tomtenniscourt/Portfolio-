@@ -1,4 +1,21 @@
 import React, { Component } from "react";
+import "./Weather.css";
+
+const weatherImages = {
+  Thunderstorm:
+    "https://cdn4.iconfinder.com/data/icons/weatherful/72/Lightning_Cloudy-1024.png",
+  Drizzle: "https://cdn4.iconfinder.com/data/icons/weatherful/72/Drip-1024.png",
+  Rain: "https://cdn4.iconfinder.com/data/icons/weatherful/72/Raining-1024.png",
+  Snow: "https://cdn4.iconfinder.com/data/icons/weatherful/72/Snow_Clody-1024.png",
+  Mist: "https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_38-1024.png",
+  Fog: "https://cdn4.iconfinder.com/data/icons/weatherful/72/Foggy-1024.png",
+  Tornado:
+    "https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Tornado-1024.png",
+  Clear:
+    "https://cdn2.iconfinder.com/data/icons/weather-emoticon/64/07_sun_smile_happy_emoticon_weather_smiley-1024.png",
+  Clouds:
+    "https://cdn4.iconfinder.com/data/icons/weatherful/72/Cloudy-1024.png",
+};
 
 class Weather extends Component {
   constructor(props) {
@@ -59,7 +76,7 @@ class Weather extends Component {
 
   render() {
     return (
-      <div>
+      <div class="weather-content">
         <h1>Weather Forecast</h1>
         <form onSubmit={this.handleSubmit}>
           <label>
@@ -67,15 +84,21 @@ class Weather extends Component {
             <input type="text" onChange={this.handleChange} />
           </label>
           <br />
+          <br />
           <input type="submit" value="Get my forecast!" />
+          <br />
           <br />
           <p>
             {this.state.error && <span>{this.state.error}</span>}
             {this.state.temperature && (
               <span>
-                The current temperature in {this.state.city} is {" "}
-                {this.state.temperature}°F.<br /> There is a possible high of {this.state.high}°F
-                and a low of {this.state.low}°F.<br />The last reported description of the weather was: {this.state.description}.
+                The current temperature in {this.state.city} is{" "}
+                {this.state.temperature}°F.
+                <br /> There is a possible high of {this.state.high}°F and a low
+                of {this.state.low}°F.
+                <br />
+                The last reported description of the weather was:{" "}
+                {this.state.description}.
               </span>
             )}
           </p>
