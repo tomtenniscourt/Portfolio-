@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .sm-profile {
     width: 50px;
     height: 50px;
@@ -12,7 +14,7 @@
 
 .email-button {
     display: inline-block;
-    padding: 3px 20px;
+    padding: 1px 20px;
     background-image: url('https://pixy.org/src/10/thumbs350/103675.jpg');
     background-size: contain;
     background-position: center;
@@ -21,8 +23,8 @@
     border-radius: 5px;
     font-size: 17px;
     color: red;
+    font-family: 'Anton', sans-serif;
     cursor: pointer;
-    transition: background-color .3s ease;
 }
 
 .email-button:hover {
