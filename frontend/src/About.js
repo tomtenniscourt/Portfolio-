@@ -4,7 +4,7 @@ function About() {
   return (
     <div class="page-content">
       <br />
-      <h2>About</h2>
+      <h2>About Tom...</h2>
       <p>This is the about page.</p>
     </div>
   );

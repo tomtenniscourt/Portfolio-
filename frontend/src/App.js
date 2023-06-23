@@ -8,6 +8,8 @@ import Contact from "./Contact";
 import Tictactoe from "./Tictactoe";
 import Joke from "./Joke";
 import Weather from "./Weather";
+import Paint from "./Paint";
+
 
 import "./App.css";
 
@@ -34,6 +36,7 @@ function App() {
           <Route path="/tictactoe" element={<Tictactoe />} />
           <Route path="/joke" element={<Joke />} />
           <Route path="/Weather" element={<Weather />} />
+          <Route path="/paint" element={<Paint />} />
         </Routes>
       </div>
     </Router>

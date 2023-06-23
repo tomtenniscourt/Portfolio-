@@ -20,6 +20,10 @@ function Home() {
       <li>
         <a href="./weather">Weather Forecast</a>
       </li>
+      <br />
+      <li>
+        <a href="./paint">Paint</a>
+      </li>
     </div>
   );
 }
