@@ -73,9 +73,9 @@ class Weather extends Component {
             {this.state.error && <span>{this.state.error}</span>}
             {this.state.temperature && (
               <span>
-                Current temperature in {this.state.city}:{" "}
-                {this.state.temperature}°F, with a high of {this.state.high}°F
-                and a low of {this.state.low}°F. {this.state.description}.
+                The current temperature in {this.state.city} is {" "}
+                {this.state.temperature}°F.<br /> There is a possible high of {this.state.high}°F
+                and a low of {this.state.low}°F.<br />The last reported description of the weather was: {this.state.description}.
               </span>
             )}
           </p>
