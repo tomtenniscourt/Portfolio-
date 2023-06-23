@@ -7,6 +7,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Tictactoe from "./Tictactoe";
 import Joke from "./Joke";
+import Weather from "./Weather";
+
 import "./App.css";
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/tictactoe" element={<Tictactoe />} />
           <Route path="/joke" element={<Joke />} />
+          <Route path="/Weather" element={<Weather />} />
         </Routes>
       </div>
     </Router>
