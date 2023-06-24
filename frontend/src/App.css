@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300;600;800&display=swap');
 
 /* NAV BAR CSS */
 nav ul {
@@ -39,30 +39,31 @@ nav ul li a {
 }
 /* Fonts */
 h1 {
-font-family: 'Lobster Two', cursive;
+font-family: 'Ysabeau Office', sans-serif;
 font-size: 75px;
 color: #333333;
 }
 
 h2 {
-  font-family: 'Lobster Two', cursive;
+font-family: 'Ysabeau Office', sans-serif;
   font-size: 50px;
   color: #333333;
 }
 
 p {
-font-family: 'Indie Flower', cursive;
+font-family: 'Ysabeau Office', sans-serif;
 font-size: 25px;
 color: #444444;
+
 }
 
 .nav-item {
-  font-family: 'Lobster Two', cursive;
+font-family: 'Ysabeau Office', sans-serif;
   font-size: 25px;
 }
 
 .home-links {
-    font-family: 'Lobster Two', cursive;
+font-family: 'Ysabeau Office', sans-serif;
     font-size: 25px;
     list-style-type: none;
     padding: 0;
