@@ -51,7 +51,7 @@ const Tictactoe = () => {
 
   const reset = () => {
     setBoard(Array(9).fill(null));
-    setCurrentPlayer("🚀");
+    setCurrentPlayer("⭕️");
     setWinner(null);
   };
 

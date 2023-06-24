@@ -73,3 +73,9 @@ font-family: 'Ysabeau Office', sans-serif;
 body {
   background-color: #F8F8F8;
 }
+
+.home-links {
+  border: 1px solid black;
+  margin-left: 480px;
+  margin-right: 480px;
+}
