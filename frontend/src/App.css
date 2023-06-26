@@ -50,6 +50,13 @@ font-family: 'Ysabeau Office', sans-serif;
   color: #333333;
 }
 
+h3 {
+font-family: 'Ysabeau Office', sans-serif;
+  font-size: 30px;
+  color: #333333;
+  font-style: italic;
+}
+
 p {
 font-family: 'Ysabeau Office', sans-serif;
 font-size: 25px;
@@ -76,6 +83,102 @@ body {
 
 .home-links {
   border: 1px solid black;
+   border-radius: 5px;
   margin-left: 480px;
   margin-right: 480px;
+}
+
+/* Home Page Buttons GO */
+.go-tictactoe {
+  background-color: #e63b3b;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.go-tictactoe:hover {
+  background-color: #ff6060;
+  transform: scale(1.1);
+}
+
+.go-joke {
+  background-color: #e63b3b;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.go-joke:hover {
+  background-color: #ff6060;
+  transform: scale(1.1);
+}
+
+.go-weather {
+  background-color: #e63b3b;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.go-weather:hover {
+  background-color: #ff6060;
+  transform: scale(1.1);
+}
+
+.go-paint {
+  background-color: #e63b3b;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.go-paint:hover {
+  background-color: #ff6060;
+  transform: scale(1.1);
+}
+
+/* Home Page Buttons INFO */
+
+.info-tictactoe {
+    background-color: #3b79e6;
+      border-radius: 5px;
+      color: #fff;
+}
+
+.info-tictactoe:hover {
+background-color: #6080ff;
+  transform: scale(1.1);
+}
+
+.info-joke {
+  background-color: #3b79e6;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.info-joke:hover {
+  background-color: #6080ff;
+  transform: scale(1.1);
+}
+
+.info-weather {
+  background-color: #3b79e6;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.info-weather:hover {
+  background-color: #6080ff;
+  transform: scale(1.1);
+}
+
+.info-weather {
+  background-color: #3b79e6;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.info-weather:hover {
+  background-color: #6080ff;
+  transform: scale(1.1);
 }
