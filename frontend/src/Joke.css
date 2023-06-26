@@ -12,9 +12,11 @@
     padding: 10px 20px;
     font-size: 16px;
     background-color: #ffcc00;
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 25px;
 }
 
 .joke-button:hover {
