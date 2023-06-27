@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css";
 
 function About() {
   return (
@@ -7,6 +8,7 @@ function About() {
       <h2>About Tom...</h2>
       <br />
       <h3>Who am I?</h3>
+
       <p>
         After leaving an eight year career in political consulting behind, I
         have recently finished a Software Engineering Immersive course with
@@ -14,8 +16,18 @@ function About() {
         challenege within the tech world. During this search, I plan on
         showcasing my new skills by publishing applications this protfolio
         website, and will continue to write regular blog posts that most of you
-        will probably find quite boring. I currently live with my partner in London, and work part time in a Philadelphia-themed dive bar in SoHo. 
+        will probably find quite boring. I currently live with my partner in
+        London, and work part time in a Philadelphia-themed dive bar in SoHo.
       </p>
+      <br />
+      <div classNmae="image-container">
+        <img
+          className="portfolio-picture"
+          src="https://i.imgur.com/zzSPxHu.png"
+          alt="Tom with his girlfriend"
+          style={{ width: "200px", height: "auto" }}
+        />
+      </div>
       <br />
       <h3>How did I get here?</h3>
       <p>
@@ -34,6 +46,20 @@ function About() {
         course with General Assmebly. Fast forward another twelve weeks, and
         here I am typing this all out.
       </p>
+      <div classNmae="image-container">
+        <img
+          className="portfolio-picture"
+          src="https://i.imgur.com/wVMui5R.jpeg"
+          alt="Tom and his brothers in Central Park, New York City"
+          style={{ width: "200px", height: "auto" }}
+        />
+        <img
+          className="portfolio-picture"
+          src="https://i.imgur.com/1ykpXg6.jpeg"
+          alt="Tom on Broad Street, Philadelphia, following the Eagles winning the NFC Championship"
+          style={{ width: "200px", height: "auto" }}
+        />
+      </div>
       <br />
       <h3>Life outside of work</h3>
       <p>
@@ -42,6 +68,21 @@ function About() {
         categories: Sports and Music.
         <br />
         <br />
+        <div classNmae="image-container">
+          <img
+            className="portfolio-picture"
+            src="https://i.imgur.com/ndO5bdE.jpeg"
+            alt="Tom playing a gig with his band"
+            style={{ width: "200px", height: "auto" }}
+          />
+          <img
+            className="portfolio-picture"
+            src="https://i.imgur.com/YvEkDRk.png"
+            alt="Tom at the Rolling Stones, London"
+            style={{ width: "200px", height: "auto" }}
+          />
+        </div>
+        <br />
         Sport has remained a constant part of my life since my early days at
         school. Whilst the better part of my playing days are behind me, I still
         actively follow teams in Football, Rugby, Cricket, the NFL, NBA, and
@@ -49,6 +90,15 @@ function About() {
         which depending on the sport can often run into the early hours of the
         morning.
         <br />
+        <br />
+        <div classNmae="image-container">
+          <img
+            className="portfolio-picture"
+            src="https://i.imgur.com/QqwUeKD.png"
+            alt="Tom skiing, Deer Valley, Utah"
+            style={{ width: "200px", height: "auto" }}
+          />
+        </div>
         <br />
         Music has also played a large part of my life, starting from blaring out
         the Spice Girls on my way to preschool, all the way up to playing gigs
@@ -59,6 +109,16 @@ function About() {
         to play Glastonbury, even if it's just the triangle. I still actively
         play guitar, so unlike my sporting career there's still hope yet...
       </p>
+      <br />
+      <br />
+      <div classNmae="image-container">
+        <img
+          className="portfolio-picture"
+          src="https://i.imgur.com/qI2RUh5.png"
+          alt="Tom at Superbowl 57"
+          style={{ width: "200px", height: "auto" }}
+        />
+      </div>
     </div>
   );
 }

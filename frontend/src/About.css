@@ -1,0 +1,16 @@
+/* .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.portfolio-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+
