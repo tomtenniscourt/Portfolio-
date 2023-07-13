@@ -63,7 +63,7 @@ class Paint extends Component {
     const { brushSize, color } = this.state;
 
     return (
-      <div className="paint-container">
+      <div className="paint-page-content">
         <h2>Paint App</h2>
         <br />
         <div className="controls">

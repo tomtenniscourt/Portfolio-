@@ -22,7 +22,7 @@ const Joke = ({ savedJokes, setSavedJokes }) => {
   };
 
   return (
-    <div className="joke-page">
+    <div className="joke-page-content">
       <h2>Dad Joke Generator</h2>
       <p>
         Press the <span className="button-highlight">BUTTON</span> below

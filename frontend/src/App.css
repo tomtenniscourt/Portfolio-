@@ -23,8 +23,45 @@ nav ul li a {
     text-align: center;
   }
 
-  .page-content {
+  
+
+  /* SECTION DIV CLASSES */
+  
+  .home-page-content {
     text-align: center;
+  }
+
+  .skills-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+  .about-page-content {
+    text-align: center;
+  }
+
+  .contact-page-content {
+    text-align: center;
+  }
+
+  .tictactoe-page-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .joke-page-content {
+      text-align: center;
+  }
+
+  .paint-page-content {
+  text-align: center;
+  }
+
+  .weather-page-content {
+  text-align: center;
   }
 
 /* Profile Picture */
@@ -192,11 +229,6 @@ background-color: #6080ff;
 .skills {
   margin-left: 30%;
   text-align: left;
-}
-.skills-page-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .skillsPage,

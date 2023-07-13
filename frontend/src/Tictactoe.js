@@ -58,7 +58,7 @@ const Tictactoe = () => {
   
 
   return (
-    <div className="tictactoe">
+    <div className="tictactoe-page-content">
         <h2>Tic Tac Toe</h2>
       <div className="board">
         {board.map((cell, index) => (
