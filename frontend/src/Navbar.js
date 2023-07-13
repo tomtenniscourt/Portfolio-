@@ -35,7 +35,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link to="/blog" className="nav-link">
-                Blog
+                Skills and Experience
               </Link>
             </li>
             <li className="nav-item">

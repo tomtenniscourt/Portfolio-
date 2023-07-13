@@ -84,8 +84,8 @@ body {
 .home-links {
   border: 1px solid black;
    border-radius: 5px;
-  margin-left: 480px;
-  margin-right: 480px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* Home Page Buttons GO */
@@ -172,13 +172,55 @@ background-color: #6080ff;
   transform: scale(1.1);
 }
 
-.info-weather {
+.info-paint {
   background-color: #3b79e6;
   border-radius: 5px;
   color: #fff;
 }
 
-.info-weather:hover {
+.info-paint:hover {
   background-color: #6080ff;
   transform: scale(1.1);
+}
+
+/*BLOG(SKILLS) LAYOUT*/
+
+.careerTitle {
+  text-align: center;
+}
+
+.skills {
+  margin-left: 30%;
+  text-align: left;
+}
+.skills-page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillsPage,
+.careerPage {
+  flex-basis: 100%;
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skillsPage {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .skills-page-content {
+    justify-content: center;
+    }
+
+  .skillsPage,
+  .careerPage {
+    flex-basis: 48%;
+  }
 }

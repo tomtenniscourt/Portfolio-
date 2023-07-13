@@ -21,18 +21,22 @@ function Contact() {
         <br />
         <br />
         <button onClick={handleEmailClick} className="email-button">
-         <strong>Email<br />Me</strong>
+          <strong>
+            Email
+            <br />
+            Me
+          </strong>
         </button>
         <br />
       </p>
 
-      <a href="https://www.facebook.com/mrcourtiscool/">
+      {/* <a href="https://www.facebook.com/mrcourtiscool/">
         <img
           className="sm-profile"
           src="https://www.rpc.ox.ac.uk/wp-content/uploads/2021/10/Facebook-Logo.png"
           alt="Link to Facebook"
         />
-      </a>
+      </a> */}
       <a href="https://www.instagram.com/tomtenniscourt/">
         <img
           className="sm-profile"
@@ -47,11 +51,11 @@ function Contact() {
           alt="Link to LinkedIn"
         />
       </a>
-      <a href="https://twitter.com/TomTennisCourt">
+      <a href="https://github.com/tomtenniscourt">
         <img
           className="sm-profile"
-          src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png"
-          alt="Link to Twitter"
+          src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+          alt="Link to GitHub"
         />
       </a>
     </div>

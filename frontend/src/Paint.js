@@ -96,6 +96,7 @@ class Paint extends Component {
         ></canvas>
         <br />
         <button class="clear" onClick={this.handleClearCanvas}>Clear Canvas</button>
+        <br />
       </div>
     );
   }
