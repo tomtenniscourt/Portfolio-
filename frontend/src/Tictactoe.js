@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./Tictactoe.css";
 
-const Tictactoe = () => {
+const Tictactoe = ({ onHideTicTacToe }) => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [currentPlayer, setCurrentPlayer] = useState("⭕️");
   const [winner, setWinner] = useState(null);
-
   const winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -16,7 +15,6 @@ const Tictactoe = () => {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  
 
   const handleCellClick = (index) => {
     if (board[index] || winner) {
@@ -55,11 +53,16 @@ const Tictactoe = () => {
     setWinner(null);
   };
 
-  
+    const handleHideTicTacToe = () => {
+      setWinner(null); // Reset winner state when hiding the component
+      setBoard(Array(9).fill(null)); // Reset the board when hiding the component
+      setCurrentPlayer("⭕️"); // Reset current player when hiding the component
+      onHideTicTacToe(); // Call the function from the parent component to hide Tic Tac Toe
+    };
 
   return (
     <div className="tictactoe-page-content">
-        <h2>Tic Tac Toe</h2>
+      <h2>Tic Tac Toe</h2>
       <div className="board">
         {board.map((cell, index) => (
           <div
@@ -70,6 +73,9 @@ const Tictactoe = () => {
             {cell}
           </div>
         ))}
+        <button className="hide-tictactoe" onClick={handleHideTicTacToe}>
+          Hide Tic Tac Toe
+        </button>
       </div>
 
       {winner && (

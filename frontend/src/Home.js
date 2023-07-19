@@ -12,6 +12,10 @@ function Home() {
     setShowTicTacToe(true);
   };
 
+  const handleHideTicTacToe = () => {
+    setShowTicTacToe(false);
+  };
+
   return (
     <div className="home-page-content">
       <h2>Hello</h2>
@@ -42,7 +46,9 @@ function Home() {
               )}
             </div>
             <br />
-            {showTicTacToe && <Tictactoe />}
+            {showTicTacToe && (
+              <Tictactoe onHideTicTacToe={handleHideTicTacToe} />
+            )}
           </li>
         </div>
         <div className="dad-joke-generator-home">
