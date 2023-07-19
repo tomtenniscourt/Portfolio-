@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Tictactoe from "./Tictactoe";
+import Joke from "./Joke";
+import Weather from "./Weather";
+import Paint from "./Paint";
+import "./Paint.css";
 
 function Home() {
+  const [showTicTacToe, setShowTicTacToe] = useState(false);
+
+  const handleShowTicTacToe = () => {
+    setShowTicTacToe(true);
+  };
+
   return (
     <div className="home-page-content">
       <h2>Hello</h2>
@@ -9,62 +20,84 @@ function Home() {
         demonstrate my skills as a Junior Software Engineer:
       </p>
       <ul className="home-links">
-        <li>
-          <h3>Tic Tac Toe</h3>
-          <p>
-            A game of tic tac toe using simple JavaScript logic, that can be
-            played by two users on the same computer.
-          </p>
-          <div className="button-container">
-            <a href="./tictactoe">
-              <button className="go-tictactoe">Go to App</button>
-            </a>{" "}
-            <button className="info-tictactoe">More info</button>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h3>Dad Joke Generator</h3>
-          <p>
-            Using a 3rd party API, a random 'Dad Joke' is generated on the
-            screen for the user
-          </p>
-          <div className="button-container">
-            <a href="./joke">
-              <button className="go-joke">Go to App</button>
-            </a>{" "}
-            <button className="info-joke">More info</button>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h3>Weather Forecast</h3>
-          <p>
-            Another application that uses a 3rd party API - this time using real
-            time data to fetch weather information for any given U.S. zip code
-          </p>
-          <div className="button-container">
-            <a href="./weather">
-              <button className="go-weather">Go to App</button>
-            </a>{" "}
-            <button className="info-weather">More info</button>
-          </div>
-        </li>
-        <br />
-        <li>
-          <h3>Paint</h3>
-          <p>
-            A JavaScript application that enables users to paint on a blank
-            canvas
-          </p>
-          <div className="button-container">
-            <a href="./paint">
-              <button className="go-paint">Go to App</button>
-            </a>{" "}
-            <button className="info-paint">More info</button>
-          </div>
-        </li>
-        <br />
+        <div className="tic-tac-toe-home">
+          <li>
+            <h3>Tic Tac Toe</h3>
+            <p>
+              A game of tic tac toe using simple JavaScript logic, that can be
+              played by two users on the same computer.
+            </p>
+            <div className="button-container">
+              <a href="./tictactoe">
+                <button className="go-tictactoe">Go to App</button>
+              </a>{" "}
+              <button className="info-tictactoe">More info</button>
+              {!showTicTacToe && (
+                <button
+                  className="reveal-tictactoe"
+                  onClick={handleShowTicTacToe}
+                >
+                  Show Tic Tac Toe
+                </button>
+              )}
+            </div>
+            <br />
+            {showTicTacToe && <Tictactoe />}
+          </li>
+        </div>
+        <div className="dad-joke-generator-home">
+          <li>
+            <h3>Dad Joke Generator</h3>
+            <p>
+              Using a 3rd party API, a random 'Dad Joke' is generated on the
+              screen for the user
+            </p>
+            <div className="button-container">
+              <a href="./joke">
+                <button className="go-joke">Go to App</button>
+              </a>{" "}
+              <button className="info-joke">More info</button>
+            </div>
+            <br />
+            <Joke />
+            <br />
+          </li>
+        </div>
+        <div className="weather-forecast-home">
+          <li>
+            <h3>Weather Forecast</h3>
+            <p>
+              Another application that uses a 3rd party API - this time using
+              real time data to fetch weather information for any given U.S. zip
+              code
+            </p>
+            <div className="button-container">
+              <a href="./weather">
+                <button className="go-weather">Go to App</button>
+              </a>{" "}
+              <button className="info-weather">More info</button>
+            </div>
+          </li>
+          <Weather />
+          <br />
+        </div>
+        <div className="paint-home">
+          <li>
+            <h3>Paint</h3>
+            <p>
+              A JavaScript application that enables users to paint on a blank
+              canvas
+            </p>
+            <div className="button-container">
+              <a href="./paint">
+                <button className="go-paint">Go to App</button>
+              </a>{" "}
+              <button className="info-paint">More info</button>
+            </div>
+            <Paint />
+          </li>
+          <br />
+        </div>
       </ul>
     </div>
   );

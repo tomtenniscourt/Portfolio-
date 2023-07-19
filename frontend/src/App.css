@@ -118,11 +118,36 @@ body {
   background-color: #F8F8F8;
 }
 
+/* TOTAL DIV CLASSES */
 .home-links {
   border: 1px solid black;
    border-radius: 5px;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.tic-tac-toe-home {
+    border: 1px solid black;
+      border-radius: 5px;
+      margin: 10px;
+}
+
+.dad-joke-generator-home {
+      border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+}
+
+.weather-forecast-home {
+border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.paint-home {
+border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 /* Home Page Buttons GO */
@@ -256,3 +281,4 @@ background-color: #6080ff;
     flex-basis: 48%;
   }
 }
+
