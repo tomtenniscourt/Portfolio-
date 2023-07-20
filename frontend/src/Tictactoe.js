@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Tictactoe.css";
 
-const Tictactoe = ({ onHideTicTacToe }) => {
+const Tictactoe = ({ showTicTacToe, onHideTicTacToe }) => {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [currentPlayer, setCurrentPlayer] = useState("⭕️");
   const [winner, setWinner] = useState(null);
@@ -15,6 +15,13 @@ const Tictactoe = ({ onHideTicTacToe }) => {
     [0, 4, 8],
     [2, 4, 6],
   ];
+
+  const [slideIn, setSlideIn] = useState(false);
+
+  useEffect(() => {
+    // When showTicTacToe prop changes, trigger the slide animation
+    setSlideIn(showTicTacToe);
+  }, [showTicTacToe]);
 
   const handleCellClick = (index) => {
     if (board[index] || winner) {
@@ -53,12 +60,12 @@ const Tictactoe = ({ onHideTicTacToe }) => {
     setWinner(null);
   };
 
-    const handleHideTicTacToe = () => {
-      setWinner(null); // Reset winner state when hiding the component
-      setBoard(Array(9).fill(null)); // Reset the board when hiding the component
-      setCurrentPlayer("⭕️"); // Reset current player when hiding the component
-      onHideTicTacToe(); // Call the function from the parent component to hide Tic Tac Toe
-    };
+  const handleHideTicTacToe = () => {
+    setWinner(null); // Reset winner state when hiding the component
+    setBoard(Array(9).fill(null)); // Reset the board when hiding the component
+    setCurrentPlayer("⭕️"); // Reset current player when hiding the component
+    onHideTicTacToe(); // Call the function from the parent component to hide Tic Tac Toe
+  };
 
   return (
     <div className="tictactoe-page-content">
@@ -73,9 +80,6 @@ const Tictactoe = ({ onHideTicTacToe }) => {
             {cell}
           </div>
         ))}
-        <button className="hide-tictactoe" onClick={handleHideTicTacToe}>
-          Hide Tic Tac Toe
-        </button>
       </div>
 
       {winner && (
@@ -89,6 +93,11 @@ const Tictactoe = ({ onHideTicTacToe }) => {
       <button className="reset-button" onClick={reset}>
         Reset Game
       </button>
+      {winner && (
+        <button className="hide-tictactoe" onClick={onHideTicTacToe}>
+          Hide Tic Tac Toe
+        </button>
+      )}
     </div>
   );
 };

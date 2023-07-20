@@ -3,7 +3,6 @@ import Tictactoe from "./Tictactoe";
 import Joke from "./Joke";
 import Weather from "./Weather";
 import Paint from "./Paint";
-import "./Paint.css";
 
 function Home() {
   const [showTicTacToe, setShowTicTacToe] = useState(false);
@@ -15,6 +14,8 @@ function Home() {
   const handleHideTicTacToe = () => {
     setShowTicTacToe(false);
   };
+
+  
 
   return (
     <div className="home-page-content">
@@ -32,23 +33,26 @@ function Home() {
               played by two users on the same computer.
             </p>
             <div className="button-container">
-              <a href="./tictactoe">
-                <button className="go-tictactoe">Go to App</button>
-              </a>{" "}
-              <button className="info-tictactoe">More info</button>
-              {!showTicTacToe && (
+              {!showTicTacToe ? (
                 <button
                   className="reveal-tictactoe"
                   onClick={handleShowTicTacToe}
                 >
-                  Show Tic Tac Toe
+                  Play!
+                </button>
+              ) : (
+                <button
+                  className="reveal-tictactoe" 
+                  onClick={handleHideTicTacToe}
+                >
+                  End Game
                 </button>
               )}
             </div>
-            <br />
             {showTicTacToe && (
               <Tictactoe onHideTicTacToe={handleHideTicTacToe} />
             )}
+            <br />
           </li>
         </div>
         <div className="dad-joke-generator-home">
