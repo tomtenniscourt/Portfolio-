@@ -43,9 +43,11 @@ const Joke = ({ isVisible, onHideJoke, savedJokes, setSavedJokes }) => {
       <button className="joke-button" onClick={generateJoke}>
         Joke Button
       </button>
+      <br />
       {joke && (
         <div className="joke-container">
           <p className="joke-text">{joke}</p>
+          <br />
         </div>
       )}
     </div>
