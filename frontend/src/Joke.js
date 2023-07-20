@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Joke.css";
 
-const Joke = ({ savedJokes, setSavedJokes }) => {
+const Joke = ({ isVisible, onHideJoke, savedJokes, setSavedJokes }) => {
   const [joke, setJoke] = useState("");
+  const [slideIn, setSlideIn] = useState(false);
+
+  useEffect(() => {
+    // When isVisible prop changes, trigger the slide animation
+    setSlideIn(isVisible);
+  }, [isVisible]);
 
   const generateJoke = () => {
     fetch("https://icanhazdadjoke.com/", {
@@ -12,6 +18,7 @@ const Joke = ({ savedJokes, setSavedJokes }) => {
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log("Joke data:", data); // Debugging statement
         setJoke(data.joke);
       })
       .catch((error) => console.log(error));
@@ -21,12 +28,16 @@ const Joke = ({ savedJokes, setSavedJokes }) => {
     setSavedJokes([...savedJokes, joke]);
   };
 
+  const handleHideJoke = () => {
+    setJoke(""); // Clear the joke content to hide the joke
+    onHideJoke(); // Call the function from the parent component to hide the Joke
+  };
+
   return (
-    <div className="joke-page-content">
-      <h2>Dad Joke Generator</h2>
+    <div className={`joke-page-content ${slideIn ? "slide-in" : "slide-out"}`}>
       <p>
-        Press the <span className="button-highlight">BUTTON</span> below
-        to randomly generate a thigh-slapping cracker straight to your screen.
+        Press the <span className="button-highlight">BUTTON</span> below to
+        randomly generate a thigh-slapping cracker straight to your screen.
         <br />
       </p>
       <button className="joke-button" onClick={generateJoke}>

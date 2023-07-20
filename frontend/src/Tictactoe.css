@@ -25,34 +25,32 @@
     background: #e3e3e3;
 }
 
-.cell.🚀::after {
+.cell.⭕️::after {
     background: linear-gradient(90deg, #b8e986, #64c964);
 }
 
-.cell.🛸::after {
+.cell.❌::after {
     background: linear-gradient(90deg, #88d8e7, #3eaee6);
 }
 
 .status {
     margin-top: 20px;
     font-size: 24px;
-    font-family: 'Indie Flower', cursive;
 }
 
 .reset-button {
-    display: block;
-    margin: 20px auto;
     padding: 10px 20px;
-    font-size: 25px;
-    background-color: #e63b3b;
+    background-color: #dc3545;
     color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-family: 'Lobster Two', cursive;}
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 
     .reset-button:hover {
     background-color: #ff6060;
-    transform: scale(1.1);
+        transform: scale(1.05);
 }
 

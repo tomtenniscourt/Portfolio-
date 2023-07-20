@@ -76,7 +76,6 @@ class Weather extends Component {
 
     return (
       <div className="weather-page-content">
-        <h2>Weather Forecast</h2>
         <form onSubmit={this.handleSubmit}>
           <label class="weather-label">
             Enter your zip code:  <input type="text" onChange={this.handleChange} />

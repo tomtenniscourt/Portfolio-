@@ -6,6 +6,9 @@ import Paint from "./Paint";
 
 function Home() {
   const [showTicTacToe, setShowTicTacToe] = useState(false);
+  const [showJoke, setShowJoke] = useState(false);
+  const [showWeather, setShowWeather] = useState(false); 
+  const [showPaint, setShowPaint] = useState(false); 
 
   const handleShowTicTacToe = () => {
     setShowTicTacToe(true);
@@ -15,7 +18,29 @@ function Home() {
     setShowTicTacToe(false);
   };
 
-  
+  const handleShowJoke = () => {
+    setShowJoke(true);
+  };
+
+  const handleHideJoke = () => {
+    setShowJoke(false);
+  };
+
+  const handleShowWeather = () => {
+      setShowWeather(true);
+    };
+
+  const handleHideWeather = () => {
+      setShowWeather(false);
+    };
+
+  const handleShowPaint = () => {
+        setShowPaint(true);
+      };
+
+  const handleHidePaint = () => {
+        setShowPaint(false);
+      };
 
   return (
     <div className="home-page-content">
@@ -27,7 +52,7 @@ function Home() {
       <ul className="home-links">
         <div className="tic-tac-toe-home">
           <li>
-            <h3>Tic Tac Toe</h3>
+            <h2>Tic Tac Toe</h2>
             <p>
               A game of tic tac toe using simple JavaScript logic, that can be
               played by two users on the same computer.
@@ -38,14 +63,14 @@ function Home() {
                   className="reveal-tictactoe"
                   onClick={handleShowTicTacToe}
                 >
-                  Play!
+                  Launch!
                 </button>
               ) : (
                 <button
-                  className="reveal-tictactoe" 
+                  className="hide-tictactoe"
                   onClick={handleHideTicTacToe}
                 >
-                  End Game
+                  Close
                 </button>
               )}
             </div>
@@ -57,54 +82,75 @@ function Home() {
         </div>
         <div className="dad-joke-generator-home">
           <li>
-            <h3>Dad Joke Generator</h3>
+            <h2>Dad Joke Generator</h2>
             <p>
               Using a 3rd party API, a random 'Dad Joke' is generated on the
               screen for the user
             </p>
             <div className="button-container">
-              <a href="./joke">
-                <button className="go-joke">Go to App</button>
-              </a>{" "}
-              <button className="info-joke">More info</button>
+              {!showJoke ? (
+                <button className="reveal-joke" onClick={handleShowJoke}>
+                  Launch!
+                </button>
+              ) : (
+                <button className="hide-joke" onClick={handleHideJoke}>
+                  Close
+                </button>
+              )}
             </div>
+            {showJoke && (
+              <Joke
+                isVisible={showJoke} // Use the correct prop name here
+                onHideJoke={handleHideJoke}
+                savedJokes={[]} // Pass any saved jokes here
+                setSavedJokes={() => {}} // Pass the function to update saved jokes
+              />
+            )}
             <br />
-            <Joke />
-            <br />
-          </li>
+                    </li>
         </div>
         <div className="weather-forecast-home">
           <li>
-            <h3>Weather Forecast</h3>
+            <h2>Weather Forecast</h2>
             <p>
               Another application that uses a 3rd party API - this time using
               real time data to fetch weather information for any given U.S. zip
               code
             </p>
             <div className="button-container">
-              <a href="./weather">
-                <button className="go-weather">Go to App</button>
-              </a>{" "}
-              <button className="info-weather">More info</button>
+              {!showWeather ? (
+                <button className="reveal-weather" onClick={handleShowWeather}>
+                  Launch!
+                </button>
+              ) : (
+                <button className="hide-weather" onClick={handleHideWeather}>
+                  Close
+                </button>
+              )}
             </div>
+            {showWeather && <Weather onHideWeather={handleHideWeather} />}
           </li>
-          <Weather />
           <br />
         </div>
         <div className="paint-home">
           <li>
-            <h3>Paint</h3>
+            <h2>Paint</h2>
             <p>
               A JavaScript application that enables users to paint on a blank
               canvas
             </p>
             <div className="button-container">
-              <a href="./paint">
-                <button className="go-paint">Go to App</button>
-              </a>{" "}
-              <button className="info-paint">More info</button>
+              {!showPaint ? (
+                <button className="reveal-paint" onClick={handleShowPaint}>
+                  Launch!
+                </button>
+              ) : (
+                <button className="hide-paint" onClick={handleHidePaint}>
+                  Close
+                </button>
+              )}
             </div>
-            <Paint />
+            {showPaint && <Paint onHidePaint={handleHidePaint} />}
           </li>
           <br />
         </div>

@@ -150,7 +150,7 @@ border: 1px solid black;
   margin: 10px;
 }
 
-/* Home Page Buttons GO */
+/* Home Page Buttons GO
 .go-tictactoe {
   background-color: #e63b3b;
   border-radius: 5px;
@@ -201,7 +201,7 @@ border: 1px solid black;
 
 /* Home Page Buttons INFO */
 
-.info-tictactoe {
+/* .info-tictactoe {
     background-color: #3b79e6;
       border-radius: 5px;
       color: #fff;
@@ -243,7 +243,7 @@ background-color: #6080ff;
 .info-paint:hover {
   background-color: #6080ff;
   transform: scale(1.1);
-}
+} */ 
 
 /*BLOG(SKILLS) LAYOUT*/
 
@@ -282,3 +282,48 @@ background-color: #6080ff;
   }
 }
 
+/* HOME PAGE BTTONS */
+
+.button-container .reveal-tictactoe,
+.button-container .reveal-joke,
+.button-container .reveal-weather,
+.button-container .reveal-paint {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button-container .hide-tictactoe,
+.button-container .hide-joke,
+.button-container .hide-weather,
+.button-container .hide-paint {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button-container .reveal-tictactoe:hover,
+.button-container .reveal-joke:hover, 
+.button-container .reveal-weather:hover,
+.button-container .reveal-paint:hover {
+  background-color: #20c997;
+  transform: scale(1.05);
+}
+
+.button-container .hide-tictactoe:hover,
+.button-container .hide-joke:hover,
+.button-container .hide-weather:hover,
+.button-container .hide-paint:hover {
+  background-color: #ff6060;
+  transform: scale(1.05);
+}

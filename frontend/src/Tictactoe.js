@@ -69,7 +69,6 @@ const Tictactoe = ({ showTicTacToe, onHideTicTacToe }) => {
 
   return (
     <div className="tictactoe-page-content">
-      <h2>Tic Tac Toe</h2>
       <div className="board">
         {board.map((cell, index) => (
           <div
@@ -89,15 +88,11 @@ const Tictactoe = ({ showTicTacToe, onHideTicTacToe }) => {
       )}
 
       {!winner && <div className="status">Current Player: {currentPlayer}</div>}
-
+<br />
       <button className="reset-button" onClick={reset}>
         Reset Game
       </button>
-      {winner && (
-        <button className="hide-tictactoe" onClick={onHideTicTacToe}>
-          Hide Tic Tac Toe
-        </button>
-      )}
+      
     </div>
   );
 };
